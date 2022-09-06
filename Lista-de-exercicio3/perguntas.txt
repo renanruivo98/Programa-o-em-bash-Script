@@ -1,0 +1,19 @@
+Bash Script permite que vários comandos simples sejam combinados, formando assim um comando mais complexo. Através do pipe (operador |), bash conecta a saída padrão de um comando à entrada padrão de outro. Qual comando apresenta somente os arquivos do diretório atual que contém "txt" de forma ordenada?
+R:ls*.txt
+
+O comando read tem como função?
+R: ler o conteudo digitado no echo, receber informações.
+O que acontece ao executar a seguinte linha de código em bash script? 
+   VARI=`wc -l teste | awk '{print $1}'`
+R: A variavel VARI  esta recebendo o comando wc -l, que é responsavel por contar o numero de linhas de um arquivo, e o comando awk esta passando a informação para mostrar apenas a primeir a coluna.
+
+
+
+uponha que no diretório /home/uerj/teste existam os subdiretórios d1, d2, d3, d4 e d5 e que, em cada um deles, exista um arquivo com o nome a.txt. Deseja-se fazer um script que mova o arquivo a.txt desses subdiretórios para o diretório /home/uerj/teste. Como todos os arquivos possuem o mesmo nome, deve-se renomeá-lo e adicionar o número do diretório ao nome do arquivo. Por exemplo, o arquivo /home/uerj/teste/d1/a.txt será movido para /home/uerj/teste/a1.txt enquanto que o arquivo /home/uerj/teste/d3/a.txt será movido para /home/uerj/teste/a3.txt. O código do script que realiza esse procedimento é:
+                (  ) for ((i=1;i<5;i++)) mv /home/uerj/teste/d${i}/a.txt /home/uerj/teste/a${i}.txt
+                (  ) for ((i=1;i<6;i++)) mv /home/uerj/teste/d${i}/a.txt /home/uerj/teste/a${i}.txt
+
+                ( x ) for ((i=1;i<6;i++)) do mv /home/uerj/teste/d${i}/a.txt /home/uerj/teste/a${i}.txt done
+
+                (  ) for ((i=1;i<5;i++)) do mv /home/uerj/teste/d${i}/a.txt /home/uerj/teste/a${i}.txt done
+
