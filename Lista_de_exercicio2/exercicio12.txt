@@ -1,0 +1,14 @@
+potencia()
+{
+resultado=$(($1 ** $2))
+return $resultado
+}
+echo "Inicio do programa"
+echo "---------------------------"
+
+echo -n "2 levado a 2 é:"
+potencia 3 2
+echo $?
+
+echo "---------------------------"
+echo "fim do programa"

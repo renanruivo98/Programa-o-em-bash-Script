@@ -1,0 +1,15 @@
+funcao()
+{
+echo "Digite um numero"
+read num
+if [ `expr $num % 2` == 0 ]
+then 
+ echo "1"
+else
+echo "0"
+fi
+
+}
+echo "inicio do programa"
+funcao
+echo "fim do programa"

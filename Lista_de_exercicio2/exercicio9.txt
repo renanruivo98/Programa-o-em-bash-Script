@@ -1,0 +1,11 @@
+contador_idade=0
+for (( x=1; $x<= 10; x++ ))
+do  
+    echo "Digite a idade"
+    read idade
+    if [ $idade -ge 18 ]
+    then
+    contador_idade=$[ $contador_idade +1 ]
+    fi
+done
+echo "O numero de pessoas maiores de 18 anos é: $contador_idade"

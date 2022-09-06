@@ -1,0 +1,18 @@
+absoluto()
+{
+if [ $1 -lt 0 ]
+then
+valor=$[$1 * -1]
+echo "O valor absoluto é $valor"
+else 
+echo "O valor absoluto é $1"
+fi
+}
+
+for (( x=0; $x<= 4; x++ ))
+do  
+echo "Digite um valor"
+read valor
+absoluto $valor
+
+done

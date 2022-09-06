@@ -1,0 +1,9 @@
+echo "inicio do programa"
+for (( x = 1000; $x <=2000; x++ ))
+do  
+if [ $(($x % 11)) -eq 5 ]
+then
+    echo    $x
+fi
+done    
+echo "fim do programa"

@@ -1,0 +1,30 @@
+faixa=( 0 0 0 0 0 )
+for (( x=0; $x<= 14; x++ ))
+do  
+echo  "digite a idade da pessoa $x "
+read idade
+if [ $idade -le 15 ]
+then
+
+let "faixa[0]+=1"
+
+elif [ $idade -le 30 ]
+then
+let "faixa[1]+=1"
+
+elif [ $idade -le 45 ]
+then
+
+let "faixa[2]+=1"
+
+elif [ $idade -le 60 ]
+then
+
+let "faixa[3]+=1"
+
+else 
+let "faixa[4]+=1"
+fi
+    
+done
+echo "${faixa[@]}"

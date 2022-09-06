@@ -1,0 +1,15 @@
+menor()
+{
+
+ if [ $1 -ge $2 ]
+ then
+    echo "O menor numero é o $2"
+else
+    echo "O menor numero é o $1"
+fi
+}
+echo "Inicio do programa"
+echo "--------------------------------------"
+menor 5 7
+echo "--------------------------------------"
+echo "Fim do programa"
